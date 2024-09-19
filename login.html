@@ -6,6 +6,9 @@
     <title>Document</title>
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,14 +32,13 @@
             </div>
             
             <div class="inputRow">
-                <i class="fas fa-lock"></i>
-              <input type="password" id="password" placeholder="Password" required/>
-
-              <span id="password-eye" onclick="togglePasswordVisibility()">
-                <i id="password-icon" class="fas fa-eye"></i>
-            </span>
-            
+              <i class="fas fa-lock"></i>
+              <input type="password" id="login-password" placeholder="Password" />
+              <span id="login-password-eye" onclick="toggleLoginPasswordVisibility()">
+                  <i id="login-password-icon" class="fas fa-eye"></i>
+              </span>
             </div>
+            
 
             
                 <button id="loginButton"><a href="dashboard.html">LOGIN</a></button>
