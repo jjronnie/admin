@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="containerContent">
+            <h3>Sign Up</h3>
+               <!-- Logo Section -->
+          <div class="logo-container">
+            <img src="img/full.png" alt="Logo" class="logo">
+        </div>
+          
+            <form id="signup-form">
+                <h1>Create Your Account</h1>
+
+                <div class="inputRow">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" placeholder="Your Full Name" required />
+                </div>
+
+                <div class="inputRow">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Your Email" required />
+                </div>
+
+                <div class="inputRow">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required />
+                    <span id="password-eye"><i class="fas fa-eye" onclick="togglePasswordVisibility()"></i></span>
+                </div>
+
+                <div class="inputRow">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+                    <span id="password-eye"><i class="fas fa-eye" onclick="toggleCpasswordVisibility()"></i></span>
+                </div>
+                
+                <div class="error-message" id="password-error"></div>
+
+                <div class="inputRow">
+                    
+                    <input type="tel" id="phone" placeholder="Phone Number" required />
+                </div>
+
+                
+
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="login.html">Log in</a></p>
+            </form>
+            <p>&copy; 2024 All rights Reserved | JRonnie</p>
+       </footer>
+        </div>
+    </div>
+
+    <footer>
+
+
+      
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var input = document.querySelector("#phone");
+            var iti = window.intlTelInput(input, {
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // for formatting/validation
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Dashboard Layout */
+  .dashboard {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 250px;
+    background-color: #2015ea;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .sidebar nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .sidebar nav ul li a i {
+    font-size: 1.2rem;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    color: #2015ea;
+  }
+  
+  .search-bar {
+    display: flex;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+  }
+  
+  .search-bar button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #2015ea;
+    border-radius: 0 5px 5px 0;
+    background-color: #2015ea;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .search-bar button i {
+    font-size: 1rem;
+  }
+  
+  /* Widget Styles */
+  .dashboard-widgets {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .widget {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .widget h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #2015ea;
+  }
+  
+  .widget p, .widget ul {
+    color: #555;
+  }
+  
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  

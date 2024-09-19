@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1>Welcome, User!</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." />
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </header>
+
+            <section class="dashboard-widgets">
+                <div class="widget user-profile">
+                    <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic"/>
+                    <h3>User Name</h3>
+                    <p>View and edit profile details.</p>
+                </div>
+
+                <div class="widget notifications">
+                    <h3>Notifications</h3>
+                    <ul>
+                        <li>No new notifications.</li>
+                    </ul>
+                </div>
+
+                <div class="widget activity-summary">
+                    <h3>Activity Summary</h3>
+                    <p>Recent activities and interactions.</p>
+                </div>
+
+                <div class="widget to-do-list">
+                    <h3>To-Do List</h3>
+                    <ul>
+                        <li>Complete profile setup</li>
+                        <li>Review recent transactions</li>
+                        <li>Check unread messages</li>
+                    </ul>
+                </div>
+
+                <div class="widget analytics">
+                    <h3>Analytics & Insights</h3>
+                    <p>Usage statistics and progress reports.</p>
+                </div>
+
+                <div class="widget quick-actions">
+                    <h3>Quick Actions</h3>
+                    <ul>
+                        <li><a href="#">Create New Post</a></li>
+                        <li><a href="#">Send Message</a></li>
+                        <li><a href="#">View Reports</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget messages">
+                    <h3>Messages</h3>
+                    <p>No unread messages.</p>
+                </div>
+
+                <div class="widget announcements">
+                    <h3>Announcements</h3>
+                    <p>Important updates and news.</p>
+                </div>
+
+                <div class="widget calendar">
+                    <h3>Calendar</h3>
+                    <p>Upcoming events and deadlines.</p>
+                </div>
+
+                <div class="widget support">
+                    <h3>Support</h3>
+                    <p><a href="#">Get help and support</a></p>
+                </div>
+
+                <div class="widget recent-activity">
+                    <h3>Recent Activity</h3>
+                    <p>Log of recent user activities.</p>
+                </div>
+
+                <div class="widget recommendations">
+                    <h3>Recommendations</h3>
+                    <p>Personalized suggestions based on activity.</p>
+                </div>
+
+                <div class="widget settings">
+                    <h3>Settings</h3>
+                    <p><a href="#">Customize your account</a></p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
