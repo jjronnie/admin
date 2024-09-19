@@ -92,6 +92,7 @@ form {
     object-fit: cover;
     border: 1px solid #ccc; /* Optional border */
     top: -50px;
+    background-color: whitesmoke;
 }
 
 .container {
